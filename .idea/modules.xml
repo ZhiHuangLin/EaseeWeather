@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenulibrary/SlidingMenulibrary.iml" filepath="$PROJECT_DIR$/SlidingMenulibrary/SlidingMenulibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeMenuListViewLibrary/SwipeMenuListViewLibrary.iml" filepath="$PROJECT_DIR$/SwipeMenuListViewLibrary/SwipeMenuListViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" filepath="$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Weather-master.iml" filepath="$PROJECT_DIR$/Weather-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenulibrary/Weather-master-SlidingMenulibrary.iml" filepath="$PROJECT_DIR$/SlidingMenulibrary/Weather-master-SlidingMenulibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeMenuListViewLibrary/Weather-master-SwipeMenuListViewLibrary.iml" filepath="$PROJECT_DIR$/SwipeMenuListViewLibrary/Weather-master-SwipeMenuListViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicatorLibrary/Weather-master-ViewPagerIndecatorLibrary.iml" filepath="$PROJECT_DIR$/ViewPagerIndicatorLibrary/Weather-master-ViewPagerIndecatorLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

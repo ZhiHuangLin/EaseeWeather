@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_margin="3dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/right_menu_cityname"
+                    style="@style/CityInfoText"
+                    android:text="城市名： - -"
+                    android:drawableLeft="@drawable/right_citiname_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/right_menu_postcode"
+                    style="@style/CityInfoText"
+                    android:layout_below="@+id/r"
+                    android:text="邮编    ： - -"
+                    android:drawableLeft="@drawable/right_arecode_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/right_menu_areacode"
+                    style="@style/CityInfoText"
+                    android:text="区号    ： - -"
+                    android:drawableLeft="@drawable/right_areanum_icon"/>
+
+                <TextView
+                    android:id="@+id/right_menu_altitude"
+                    style="@style/CityInfoText"
+                    android:text="海拔    ： - -"
+                    android:drawableLeft="@drawable/right_attitude_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/right_menu_latitude"
+                    style="@style/CityInfoText"
+                    android:text="经度    ： 40.856865"
+                    android:drawableLeft="@drawable/right_titude_icon"/>
+
+                <TextView
+                    android:id="@+id/right_menu_longtitude"
+                    style="@style/CityInfoText"
+                    android:text="纬度    ： - -"
+                    android:drawableLeft="@drawable/right_titude_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="3dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/right_today_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/md_grey_900_color_code"
+                        android:text="- -"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:id="@+id/right_today_weather_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_default_big" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/right_uv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:text="紫外线-"
+                            android:paddingRight="5dp"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/right_rain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="降雨概率 --"
+                            android:paddingRight="5dp"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/right_air_press"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="right"
+                            android:text="气压--"
+                            android:paddingRight="5dp"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/right_day"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:text="白天" />
+                        <TextView
+                            android:id="@+id/right_night"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+
+                            android:text="夜间" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/right_day_weather"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_day_weather"
+                             />
+                        <TextView
+                            android:id="@+id/right_night_weather"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_night_weather"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/right_sunbegin"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_sunbegin"
+                             />
+                        <TextView
+                            android:id="@+id/right_sunend"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_sunend"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/right_day_temp"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_day_temp"
+                             />
+                        <TextView
+                            android:id="@+id/right_night_temp"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_night_temp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/right_day_wind"
+                            android:drawableLeft="@drawable/right_day_wind"
+                            style="@style/RightTodayText"
+                             />
+                        <TextView
+                            android:id="@+id/right_night_wind"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_night_wind"
+                             />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/right_day_wind_diretion"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_day_wind_diretion"
+
+                             />
+                        <TextView
+                            android:id="@+id/right_night_wind_diretion"
+                            style="@style/RightTodayText"
+                            android:drawableLeft="@drawable/right_night_wind_diretion"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

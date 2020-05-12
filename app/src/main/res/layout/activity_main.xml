@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/md_black_color_code"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    >
+  <!--  <ImageView
+        android:id="@+id/back_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/day"
+        android:scaleType="fitXY" />-->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ScrollView
+                android:id="@+id/weather_scrollview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:fillViewport="true"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+                    <include layout="@layout/title" />
+                    <include layout="@layout/main_now"/>
+                    <LinearLayout
+                        android:id="@+id/AdLinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" />
+                    <LinearLayout
+                        android:id="@+id/miniAdLinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <include layout="@layout/main_hourlist"/>
+                    <include layout="@layout/main_forecast"/>
+                    <include layout="@layout/main_aqi"/>
+                    <include layout="@layout/main_index"/>
+                    <!--<include layout="@layout/main_forecast" />
+
+                    <include layout="@layout/aqi" />
+
+                    <include layout="@layout/suggestion" />&ndash;&gt;-->
+                   <!-- <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:src="@drawable/ic_default_big"
+                        app:backgroundTint="#ff87ffeb"
+                        app:rippleColor="#33728dff"
+                        app:elevation="6dp"
+                        app:pressedTranslationZ="12dp"
+                        />-->
+                </LinearLayout>
+
+
+            </ScrollView>
+
+         <!--   <com.melnykov.fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_default_big"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary_pressed"
+                fab:fab_colorRipple="@color/ripple" />-->
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:layout_gravity="start" >
+
+            <include layout="@layout/main_left_menu"/>
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:id="@+id/main_right_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+           android:layout_gravity="end"
+            >
+            <include layout="@layout/main_right_menu"/>
+        </LinearLayout>-->
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</FrameLayout>

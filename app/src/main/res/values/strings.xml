@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">易看天气</string>
+    <string name="aboutContent">2016年12月23开始建立项目，易看天气作为一款MD风格的生活APP具备天气APP的基本功能，丰富的天气信息，具有多种娱乐资讯，同时连接蓝牙设备可以获取到当前室内温度，桌面小工具，会为用户提供丰富的推送信息。虽然有很多不足，但愿与用户共同成长，一起期待2.0版本的易看天气。</string>
+    <string name="share_txt">易看天气下载地址：www.baidu.com</string>
+    <string name="share_app">分享</string>
+    <string name="app_html">https://github.com/w77996/Weather</string>
+    <string name="alipay">dd</string>
+    <string name="can_not_find_version_name">找不到版本号</string>
+    <string name="bugTableUrl">https://www.wenjuan.com/s/q6riuy/</string>
+    <string name="open_source">
+            •Butterknife注解式框架 http://jakewharton.github.io/butterknife/ \n
+            •Glide图片加载框架 https://github.com/bumptech/glide \n
+            •Okhttp网络请求框架 http://square.github.io/okhttp/ \n
+            •LitePal数据库操作框架 https://github.com/LitePalFramework/LitePal \n
+            •Logger 开发日志框架 https://github.com/orhanobut/logger \n
+            •Gson json数据解析框架 https://github.com/google/gson \n
+            •SlidingMenu侧拉菜单框架 https://github.com/jfeinstein10/SlidingMenu \n
+            •SwipeMenuListView侧滑删除框架 https://github.com/baoyongzhang/SwipeMenuListView/ \n
+            •易源数据提供的天气数据 https://www.showapi.com/ \n
+            •极光推送服务 https://www.jiguang.cn/accounts/platform \n
+            •有米广告平台 https://www.youmi.net/ \n
+            •高德地图 http://lbs.amap.com/ \n</string>
+    <string name="cityselect_select_city">选择城市</string>
+    <string name="cityselect_hot_city">热门城市</string>
+    <string name="cityselect_located_city">定位城市</string>
+    <string name="cityselect_hint_search_box">请输入城市名或拼音</string>
+    <string name="cityselect_nothing_found">没有搜索结果~</string>
+    <string name="cityselect_locating">正在定位…</string>
+    <string name="cityselect_located_failed">定位失败</string>
+</resources>
